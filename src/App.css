@@ -1,0 +1,415 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  min-height: 100vh;
+  max-height: 100%;
+  min-width: 100vh;
+  max-width: 100%;
+  background-color: #9ba9eb;
+  background-size: cover;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: 'Roboto';
+}
+
+.app-logo {
+  width: 150px;
+  height: 45px;
+  margin-bottom: 30px;
+}
+
+.password-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 50vh;
+  min-height: 50vh;
+  background-color: #5763a5;
+  padding: 40px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.lg-password-image {
+  width: 35%;
+  height: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 350px;
+  height: auto;
+  background-color: #454f84;
+  border-radius: 5px;
+  color: #f8fafc;
+  margin-top: 30px;
+}
+
+.password-heading {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.input-element-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f8fafc;
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.input-image {
+  width: 14px;
+  height: 14px;
+  margin: 10px;
+}
+
+.input-element {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  border-left-style: solid;
+  border-left-color: #94a3b8;
+  border-left-width: 1px;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.add-btn {
+  background-color: #0b69ff;
+  color: white;
+  font-size: 10px;
+  width: 60px;
+  padding: 5px;
+  border-style: none;
+  outline: none;
+  border-radius: 2px;
+  align-self: flex-end;
+}
+
+.sm-password-image {
+  display: none;
+}
+
+.display-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 50vh;
+  max-height: 100%;
+  background-color: #5763a5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pass-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pass-heading {
+  color: #f8fafc;
+  font-size: 16px;
+  margin-right: 5px;
+}
+.count {
+  border-style: solid;
+  border-color: #9ba9eb;
+  border-width: 1px;
+  border-radius: 8px;
+  width: 20px;
+  text-align: center;
+  color: #f8fafc;
+  font-size: 10px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f8fafc;
+  width: 180px;
+  height: 22px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+hr {
+  background-color: #9ba9eb;
+  border-style: none;
+  height: 1px;
+  width: 100%;
+}
+
+.show-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.check-box {
+  width: 15px;
+  height: 15px;
+  border-style: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+.label-password {
+  color: #f8fafc;
+  font-size: 12px;
+}
+
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.empty-image {
+  width: 220px;
+  height: 170px;
+}
+
+.empty-password {
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.show-user-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.show-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #9ba9eb;
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 10px;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+
+.user-initial {
+  font-size: 16px;
+  color: white;
+  background-color: green;
+  width: 35px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #f8fafc;
+  height: 100%;
+}
+
+.web-name {
+  font-size: 12px;
+  margin: 2px;
+}
+
+.star-image {
+  width: 80px;
+  height: 10px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.delete-btn {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+  margin-left: auto;
+}
+
+.delete-image {
+  width: 20px;
+  height: 20px;
+}
+
+.yellow {
+  background-color: #f59e0b;
+}
+
+.green {
+  background-color: #10b981;
+}
+
+.orange {
+  background-color: #f97316;
+}
+
+.brown {
+  background-color: #b91c1c;
+}
+
+.blue {
+  background-color: #0ea5e9;
+}
+
+@media screen and (max-width: 767px) {
+  .bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    max-height: 100%;
+    min-width: 100vh;
+    max-width: 100%;
+    background-color: #9ba9eb;
+    background-size: cover;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .password-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 50px;
+    min-width: 50px;
+  }
+
+  .lg-password-image {
+    display: none;
+  }
+  .sm-password-image {
+    display: block;
+    width: 300px;
+    height: 150px;
+    margin-bottom: 18px;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 300px;
+    height: auto;
+    background-color: #454f84;
+    border-radius: 5px;
+    color: #f8fafc;
+    margin-top: 30px;
+  }
+
+  .password-heading {
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .input-element-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f8fafc;
+    width: 100%;
+    height: 25px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+
+  .input-image {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+  }
+
+  .input-element {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    border-left-style: solid;
+    border-left-color: #94a3b8;
+    border-left-width: 1px;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .add-btn {
+    background-color: #0b69ff;
+    color: white;
+    font-size: 10px;
+    width: 60px;
+    padding: 5px;
+    border-style: none;
+    outline: none;
+    border-radius: 2px;
+    align-self: flex-end;
+  }
+  .display-container {
+    min-height: 50vh;
+  }
+  .show-user-details-container {
+    justify-content: center;
+  }
+}
